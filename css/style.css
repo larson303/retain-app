@@ -1,52 +1,70 @@
 /* ---------- Theme variables ---------- */
 
 :root {
-    /* Dark theme (default) */
-    --primary: #2a6592;
-    --primary-hover: #3a76a8;
+  --color-brand-teal: #537680;
+  --color-brand-gold: #dbbe76;
+  --color-brand-light: #fbfcfc;
+  --color-brand-grayteal: #a7b9be;
 
-    --secondary: #7e9a9a;
-    --secondary-hover: #6a8585;
+  --primary: #2a6592;
+  --primary-hover: #3a76a8;
 
-    --info: #8ec3eb;
-    --info-hover: #75b9e8;
+  --secondary: #7e9a9a;
+  --secondary-hover: #6a8585;
 
-    --warning: #db9833;
-    --warning-hover: #c27f26;
+  --warning: #e67e22;
+  --warning-hover: #d35400;
 
-    --bg-color: #13272f; /* deep GrayTeal */
-    --surface-color: #1f363d; /* dark teal surface */
-    --nav-bg: #1f363d;
-    --nav-border: rgba(255, 255, 255, 0.06);
+  --bg-color: #060c10;
+  --surface-color: #111c22;
+  --card-bg: #223a44;
+  --text-color: #e8f1f2;
 
-    --card-bg: #24454f;
-    --card-text: #e8f1f2;
-    --text-color: #e8f1f2;
-    --muted-text: #9fb3b8;
+  --radius: 0.75rem;
+  --shadow-soft: 0 8px 20px rgba(0, 0, 0, 0.45);
 
-    --accent: #dbbe76; /* GoldenYellow */
-    --accent-hover: #c3a45e; /* darker brass/gold */
+/* Accent color for brand elements */
+  --accent: var(--color-brand-gold);
 
-    --radius: 0.5rem;
-    --shadow-soft: 0 4px 14px rgba(0, 0, 0, 0.45);
+  --nav-bg: #0b161c;
+  --nav-border: #1a2a30;
+
+  --muted-text: #a0b0b4;
+
+  --info: rgba(52, 152, 219, 0.15);
+  --info-hover: #3498db;
+
+  --card-text: #e8f1f2;
+
+  /* === Extended blues / cyans === */
+  --color-blue-deep:      #06457f;
+  --color-blue-navy:      #262b40;
+  --color-blue-slate:     #326080;
+  --color-blue-soft:      #95b2e8;
+  --color-blue-gray:      #435761;
+  --color-cyan-soft:      #48bcd1;
+  --color-cyan:           #8ec3eb;
+
+  /* === Neutrals === */
+  --color-gray-100:       #f5f7f8;
+  --color-gray-200:       #dfe5e8;
+  --color-gray-700:       #57707d;
+  --color-gray-900:       #303e45;
+
+  /* === Status / semantic colors === */
+  --color-warning:        #db9833;   /* warm gold/orange */
+  --color-warning-strong: #c27f26;
+  --color-danger-soft:    #ecc5c6;
+
+
 }
 
 body.light {
-    /* Light theme */
-
-
-    --bg-color: #b3c5c5; /* White */
-    --surface-color: #f2f5f6; /* soft light surface */
-    --nav-bg: #537680; /* GrayTeal */
-    --nav-border: rgba(0, 0, 0, 0.05);
-
-    --card-bg: #e8f0f4;
-    --card-text: #2e3a3f;
-    --text-color: #2e3a3f;
-    --muted-text: #6e7a80;
-
+  --bg-color: var(--color-brand-grayteal);
+  --surface-color: var(--color-brand-light);
+  --card-bg: #ffffff;
+  --text-color: #2e3a3f;
 }
-
 /* ---------- Base layout ---------- */
 
 *,
